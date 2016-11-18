@@ -8,13 +8,15 @@ It processed the following events:
    - REMOVE
    - MODIFY
 
-We force a re-idex for each actions for close to realtime indexing.
+We force an index refresh for each event, for close to realtime indexing.
 
-The DynamoDB JSON object is unmarshaled and the types are correctly converted. (Binary types have never been tested)
+The DynamoDB JSON objects are unmarshaled and types are correctly converted. (Binary types have never been tested though)
 
-List of numbers and strings are converted to list of Strings. ES doesn't allow array of different data types.
+List of numbers and strings are converted to list of Strings. ES doesn't allow arrays of different data types.
 
-A blog reference explaining what we're doing here: https://aws.amazon.com/blogs/compute/indexing-amazon-dynamodb-content-with-amazon-elasticsearch-service-using-aws-lambda/
+Blog reference explaining what we're doing here: https://aws.amazon.com/blogs/compute/indexing-amazon-dynamodb-content-with-amazon-elasticsearch-service-using-aws-lambda/
+
+Unfortunatly, AWS removed the Lambda Blueprint doing what we are doing here. So we've done it ourself again.
 
 # Get started
 
