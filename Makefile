@@ -30,14 +30,14 @@ help:
 all: dist
 
 create/%: dist/%.zip _check-desc .env
-	aws $(if ${PROFILE},--profile ${PROFILE},) s3 cp $< s3://sportarchive-${ENV}-code/lambda/$(<F)
+	aws $(if ${PROFILE},--profile ${PROFILE},) s3 cp $< s3://${AWS_BUCKET_CODE}/lambda/$(<F)
 	aws $(if ${PROFILE},--profile ${PROFILE},) lambda create-function \
 		--function-name $* \
-		--memory-size 1536 \
+		--memory-size 128 \
 		--runtime python2.7 \
-		--role arn:aws:iam::${AWS_ACCOUNT}:role/lambda_orchestrate_role \
+		--role ${IAM_ROLE} \
 		--handler index.handler \
-		--code S3Bucket=sportarchive-${ENV}-code,S3Key=lambda/$(<F) \
+		--code S3Bucket=${AWS_BUCKET_CODE},S3Key=lambda/$(<F) \
 		--description '${DESC}' \
 		--timeout 10
 setmem/%: _check-size
@@ -46,10 +46,10 @@ setmem/%: _check-size
 		--memory-size ${SIZE}
 deploy: $(addprefix deploy/,$(call FILTER_OUT,__init__, $(notdir $(wildcard src/*)))) .env
 deploy/%: dist/%.zip .env
-	aws $(if ${PROFILE},--profile ${PROFILE},) s3 cp $< s3://sportarchive-${ENV}-code/lambda/$(<F)
+	aws $(if ${PROFILE},--profile ${PROFILE},) s3 cp $< s3://${AWS_BUCKET_CODE}/lambda/$(<F)
 	aws $(if ${PROFILE},--profile ${PROFILE},) lambda update-function-code \
 		--function-name $* \
-		--s3-bucket sportarchive-${ENV}-code \
+		--s3-bucket ${AWS_BUCKET_CODE} \
 		--s3-key lambda/$(<F)
 dist: $(addprefix dist/,$(addsuffix .zip,$(call FILTER_OUT,__init__, $(notdir $(wildcard src/*))))) .env
 dist/%.zip: src/%/* build/setup.cfg $(wildcard lib/**/*) .env
@@ -68,7 +68,7 @@ clean:
 	-$(RM) -f .env
 
 .env:
-	aws $(if ${PROFILE},--profile ${PROFILE},) s3 cp s3://sportarchive-${ENV}-code/${ENV}_es_creds ./lib/env.py
+	aws $(if ${PROFILE},--profile ${PROFILE},) s3 cp s3://${AWS_BUCKET_CODE}/${ENV}_es_creds ./lib/env.py
 	cp ./lib/env.py .env
 
 _check-vers:
