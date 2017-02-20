@@ -1,4 +1,3 @@
-ENV = dev
 PROFILE :=
 EVENT :=
 DIR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
@@ -30,6 +29,10 @@ help:
 all: dist
 
 create/%: dist/%.zip _check-desc .env
+	if [ ! -n "${ENV}" ]; then \
+		echo "No ENV environment variable declared. Set it up and retry. This is used to pull the credential file from the correct bucket. e.g: dev, dev-eu"; \
+		exit 1; \
+	fi;
 	aws $(if ${PROFILE},--profile ${PROFILE},) s3 cp $< s3://${AWS_BUCKET_CODE}/lambda/$(<F)
 	aws $(if ${PROFILE},--profile ${PROFILE},) lambda create-function \
 		--function-name $* \
@@ -46,6 +49,10 @@ setmem/%: _check-size
 		--memory-size ${SIZE}
 deploy: $(addprefix deploy/,$(call FILTER_OUT,__init__, $(notdir $(wildcard src/*)))) .env
 deploy/%: dist/%.zip .env
+	if [ ! -n "${ENV}" ]; then \
+		echo "No ENV environment variable declared. Set it up and retry. This is used to pull the credential file from the correct bucket. e.g: dev, dev-eu"; \
+		exit 1; \
+	fi;
 	aws $(if ${PROFILE},--profile ${PROFILE},) s3 cp $< s3://${AWS_BUCKET_CODE}/lambda/$(<F)
 	aws $(if ${PROFILE},--profile ${PROFILE},) lambda update-function-code \
 		--function-name $* \
@@ -68,6 +75,10 @@ clean:
 	-$(RM) -f .env
 
 .env:
+	if [ ! -n "${ENV}" ]; then \
+		echo "No ENV environment variable declared. Set it up and retry. This is used to pull the credential file from the correct bucket. e.g: dev, dev-eu"; \
+		exit 1; \
+	fi;
 	aws $(if ${PROFILE},--profile ${PROFILE},) s3 cp s3://${AWS_BUCKET_CODE}/${ENV}_es_creds ./lib/env.py
 	cp ./lib/env.py .env
 
