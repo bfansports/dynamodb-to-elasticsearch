@@ -39,7 +39,7 @@ create/%: dist/%.zip _check-desc .env
 		--memory-size 128 \
 		--runtime python2.7 \
 		--role ${IAM_ROLE} \
-		--handler index.handler \
+		--handler index.lambda_handler \
 		--code S3Bucket=${AWS_BUCKET_CODE},S3Key=lambda/$(<F) \
 		--description '${DESC}' \
 		--timeout 10
