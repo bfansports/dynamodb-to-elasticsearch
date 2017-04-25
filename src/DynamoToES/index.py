@@ -171,7 +171,7 @@ def unmarshalValue(node, forceNum=False):
         if (key == "SS" or key == "BS" or key == "L"):
             data = []
             for item in value:
-                data.append(unmarshalValue(item))
+                data.append(item)
             return data
         if (key == "NS"):
             data = []
