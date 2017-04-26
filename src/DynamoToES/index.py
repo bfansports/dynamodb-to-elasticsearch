@@ -168,11 +168,15 @@ def unmarshalValue(node, forceNum=False):
             for key1, value1 in value.items():
                 data[key1] = unmarshalValue(value1, True)
             return data
-        if (key == "SS" or key == "BS" or key == "L"):
+        if (key == "BS" or key == "L"):
             data = []
             for item in value:
-                data.append(item)
+                data.append(unmarshalValue(item))
             return data
+        if (key == "SS"):
+            data = []
+            for item in value:
+                 data.append(item)
         if (key == "NS"):
             data = []
             for item in value:
