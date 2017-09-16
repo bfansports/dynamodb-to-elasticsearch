@@ -72,10 +72,10 @@ That will update the ZIP and refresh your Lambda function.
 
 ## Next
 
-Now your Lambda function is created, head to AWS Lambdam find the function we just created and click `Triggers`.
-Now add triggers for DynamoDB for all the table you want to process. 
+Now your Lambda function is created, head to AWS Lambda, find the function we just created and click `Triggers`.
+Now add triggers for all the DynamoDB tables you want to process. 
 
-You dynamoDB tables must have Dynamo Steam activated.
+Your dynamoDB tables must have Dynamo Stream activated.
 
 Check your CloudWatch logs to make sure your function processes things correctly!
 
