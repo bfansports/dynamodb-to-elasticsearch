@@ -2,7 +2,7 @@
 
 This package allow you to easily ZIP a Lambda function and start processing DynamoDB Streams in order to index your DynamoDB objects in ElasticSearch.
 
-It processed the following events:
+It processes the following events:
 
    - INSERT
    - REMOVE
@@ -69,5 +69,16 @@ make deploy/DynamoToES DESC="Process DynamoDB stream to ES"
 ```
 
 That will update the ZIP and refresh your Lambda function.
+
+## Next
+
+Now your Lambda function is created, head to AWS Lambdam find the function we just created and click `Triggers`.
+Now add triggers for DynamoDB for all the table you want to process. 
+
+You dynamoDB tables must have Dynamo Steam activated.
+
+Check your CloudWatch logs to make sure your function processes things correctly!
+
+enjoy
 
 
