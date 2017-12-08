@@ -41,6 +41,7 @@ create/%: dist/%.zip _check-desc .env
 		--role ${IAM_ROLE} \
 		--handler index.lambda_handler \
 		--code S3Bucket=${AWS_BUCKET_CODE},S3Key=lambda/$(<F) \
+		--vpc-config SubnetIds=${SUBNET_IDS},SecurityGroupIds=${SG_IDS} \
 		--description '${DESC}' \
 		--timeout 10
 setmem/%: _check-size
