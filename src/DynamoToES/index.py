@@ -52,7 +52,7 @@ def lambda_handler(event, context):
                 modify_document(es, record)
                 
         except Exception as e:
-            print("Failedto process:")
+            print("Failed to process:")
             print(json.dumps(record))
             print("Error:")
             print(e)
