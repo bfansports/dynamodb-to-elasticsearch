@@ -7,6 +7,9 @@ from lib import env
 from elasticsearch import Elasticsearch, RequestsHttpConnection
 from requests_aws4auth import AWS4Auth
 
+reserved_fields = [ "uid", "_id", "_type", "_source", "_all", "_parent", "_fieldnames", "_routing", "_index", "_size", "_timestamp", "_ttl"]
+
+
 # Process DynamoDB Stream records and insert the object in ElasticSearch
 # Use the Table name as index and doc_type name
 # Force index refresh upon all actions for close to realtime reindexing
@@ -38,9 +41,6 @@ def lambda_handler(event, context):
 
     # Loop over the DynamoDB Stream records
     for record in event['Records']:
-                
-        print("New Record to process:")
-        print(json.dumps(record))
         
         try:
             
@@ -52,6 +52,9 @@ def lambda_handler(event, context):
                 modify_document(es, record)
                 
         except Exception as e:
+            print("Failed to process:")
+            print(json.dumps(record))
+            print("Error:")
             print(e)
             continue
 
@@ -166,6 +169,8 @@ def unmarshalValue(node, forceNum=False):
         if (key == "M"):
             data = {}
             for key1, value1 in value.items():
+                if key1 in reserved_fields:
+                    key1 = key1.replace("_", "__", 1)
                 data[key1] = unmarshalValue(value1, True)
             return data
         if (key == "BS" or key == "L"):
