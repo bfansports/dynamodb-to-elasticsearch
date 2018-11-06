@@ -54,8 +54,7 @@ def lambda_handler(event, context):
         except Exception as e:
             print("Failed to process:")
             print(json.dumps(record))
-            print("Error:")
-            print(e)
+            print("ERROR: " + e)
             continue
 
 # Process MODIFY events
