@@ -37,7 +37,7 @@ create/%: dist/%.zip _check-desc .env
 	aws $(if ${PROFILE},--profile ${PROFILE},) lambda create-function \
 		--function-name $* \
 		--memory-size 128 \
-		--runtime python2.7 \
+		--runtime python3.8 \
 		--role ${IAM_ROLE} \
 		--handler index.lambda_handler \
 		--code S3Bucket=${AWS_BUCKET_CODE},S3Key=lambda/$(<F) \
@@ -59,6 +59,9 @@ deploy/%: dist/%.zip .env
 		--function-name $* \
 		--s3-bucket ${AWS_BUCKET_CODE} \
 		--s3-key lambda/$(<F)
+	aws $(if ${PROFILE},--profile ${PROFILE},) lambda update-function-configuration \
+      --function-name $* \
+      --runtime python3.8
 dist: $(addprefix dist/,$(addsuffix .zip,$(call FILTER_OUT,__init__, $(notdir $(wildcard src/*))))) .env
 dist/%.zip: src/%/* build/setup.cfg $(wildcard lib/**/*) .env
 	cd build && zip -r -q ../$@ *
@@ -66,6 +69,7 @@ dist/%.zip: src/%/* build/setup.cfg $(wildcard lib/**/*) .env
 	cd $(<D) && zip -r -q ../../$@ *
 
 build/setup.cfg: requirements.txt
+	mkdir -p build
 	find build/ -mindepth 1 -not -name setup.cfg -delete
 	pip install -r $^ -t $(@D)
 	touch $@
@@ -104,4 +108,3 @@ ifndef SIZE
 	@echo "e.g: make setmem/<function> SIZE=512";
 	@false;
 endif
-
