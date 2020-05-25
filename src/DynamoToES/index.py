@@ -1,4 +1,4 @@
-from __future__ import print_function
+
 
 import json
 import re
@@ -140,7 +140,7 @@ def generateId(record):
     # Concat HASH and RANGE key with | in between
     newId = ""
     i = 0
-    for key, value in keys.items():
+    for key, value in list(keys.items()):
         if (i > 0):
             newId += "|"
         newId += str(value)
@@ -156,7 +156,7 @@ def unmarshalJson(node):
 
 # ForceNum will force float or Integer to
 def unmarshalValue(node, forceNum=False):
-    for key, value in node.items():
+    for key, value in list(node.items()):
         if (key == "NULL"):
             return None
         if (key == "S" or key == "BOOL"):
@@ -167,7 +167,7 @@ def unmarshalValue(node, forceNum=False):
             return value
         if (key == "M"):
             data = {}
-            for key1, value1 in value.items():
+            for key1, value1 in list(value.items()):
                 if key1 in reserved_fields:
                     key1 = key1.replace("_", "__", 1)
                 data[key1] = unmarshalValue(value1, True)
