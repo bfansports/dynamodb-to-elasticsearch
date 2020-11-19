@@ -6,7 +6,7 @@ DIR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 FILTER_OUT = $(foreach v,$(2),$(if $(findstring $(1),$(v)),,$(v)))
 TITLE_CASE = $(shell echo $1 | cut -c1 | tr '[[:lower:]]' '[[:upper:]]')$(shell echo $1 | cut -c2-)
 
-.PHONY: help clean dist create/% run/% deploy deploy/% _check-desc _check-vers
+.PHONY: help clean dist create/% run/% deploy deploy/% _check-desc _check-vers update_mapping
 .SILENT: help
 
 help:
@@ -49,7 +49,7 @@ setmem/%: _check-size
 		--function-name $* \
 		--memory-size ${SIZE}
 deploy: $(addprefix deploy/,$(call FILTER_OUT,__init__, $(notdir $(wildcard src/*)))) .env
-deploy/%: dist/%.zip .env
+deploy/%: dist/%.zip .env update_mapping
 	if [ ! -n "${AWSENV_NAME}" ]; then \
 		echo "No AWSENV_NAME environment variable declared. Set it up and retry. This is used to pull the credential file from the correct bucket. e.g: dev, dev-eu"; \
 		exit 1; \
@@ -73,6 +73,9 @@ build/setup.cfg: requirements.txt
 	find build/ -mindepth 1 -not -name setup.cfg -delete
 	pip install -r $^ -t $(@D)
 	touch $@
+
+update_mapping:
+	./update_mapping.py
 
 clean:
 	-$(RM) -rf dist/*
