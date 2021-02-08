@@ -6,6 +6,9 @@ import boto3
 from lib import env
 from elasticsearch import Elasticsearch, RequestsHttpConnection
 from requests_aws4auth import AWS4Auth
+import json
+import os.path
+
 
 reserved_fields = [ "uid", "_id", "_type", "_source", "_all", "_parent", "_fieldnames", "_routing", "_index", "_size", "_timestamp", "_ttl"]
 
@@ -15,6 +18,13 @@ reserved_fields = [ "uid", "_id", "_type", "_source", "_all", "_parent", "_field
 # Force index refresh upon all actions for close to realtime reindexing
 # Use IAM Role for authentication
 # Properly unmarshal DynamoDB JSON types. Binary NOT tested.
+ 
+
+# Load the mapping if it exist
+table_mapping = None
+if (os.path.isfile("lib/table_mapping.json")):
+    with open('lib/table_mapping.json') as json_file:
+        table_mapping = json.load(json_file)
 
 def lambda_handler(event, context):
 
@@ -43,7 +53,6 @@ def lambda_handler(event, context):
     for record in event['Records']:
 
         try:
-
             if record['eventName'] == "INSERT":
                 insert_document(es, record)
             elif record['eventName'] == "REMOVE":
@@ -62,7 +71,7 @@ def modify_document(es, record):
     table = getTable(record)
     print("Dynamo Table: " + table)
 
-    docId = generateId(record)
+    docId = generateId(record, table)
     print("KEY")
     print(docId)
 
@@ -86,7 +95,7 @@ def remove_document(es, record):
     table = getTable(record)
     print("Dynamo Table: " + table)
 
-    docId = generateId(record)
+    docId = generateId(record, table)
     print("Deleting document ID: " + docId)
 
     es.delete(index=table,
@@ -116,7 +125,7 @@ def insert_document(es, record):
     print("New document to Index:")
     print(doc)
 
-    newId = generateId(record)
+    newId = generateId(record, table)
     es.index(index=table,
              body=doc,
              id=newId,
@@ -134,8 +143,17 @@ def getTable(record):
     return m.group(1).lower()
 
 # Generate the ID for ES. Used for deleting or updating item later
-def generateId(record):
+# By default using keys given by the dynamo stream
+# If a mapping is there, it's used to create the id
+def generateId(record, table_name):
     keys = unmarshalJson(record['dynamodb']['Keys'])
+    if (table_mapping != None
+        and table_name in table_mapping.keys()):
+        print("Use mapping")
+        if ("SortKey" in table_mapping[table_name]):
+            return(str(keys[table_mapping[table_name]["PrimaryKey"]])+"|"+str(keys[table_mapping[table_name]["SortKey"]]))
+        else:
+            return(str(keys[table_mapping[table_name]["PrimaryKey"]]))
 
     # Concat HASH and RANGE key with | in between
     newId = ""
