@@ -5,8 +5,8 @@ import boto3
 from lib import env
 from datetime import date, datetime
 
-#This script create a json 
-
+# This script create a json used by the dynamo to eslasticseach lambda
+# More infomations about why how to use it into the README
 
 
 lamdba_client = boto3.client('lambda')
