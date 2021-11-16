@@ -57,6 +57,7 @@ deploy/%: dist/%.zip .env update_mapping
 	aws $(if ${PROFILE},--profile ${PROFILE},) s3 cp $< s3://${AWS_BUCKET_CODE}/lambda/$(<F)
 	aws $(if ${PROFILE},--profile ${PROFILE},) lambda update-function-code \
 		--function-name $* \
+		--architectures arm64 \
 		--s3-bucket ${AWS_BUCKET_CODE} \
 		--s3-key lambda/$(<F)
 	aws $(if ${PROFILE},--profile ${PROFILE},) lambda update-function-configuration \
