@@ -1,4 +1,4 @@
 boto3==1.12.39
-requests==2.23.0
+requests==2.31.0
 requests-aws4auth==0.9
 elasticsearch==7.6.0
