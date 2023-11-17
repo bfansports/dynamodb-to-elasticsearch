@@ -5,9 +5,11 @@ import re
 import boto3
 from lib import env
 from elasticsearch import Elasticsearch, RequestsHttpConnection
+from opensearchpy import OpenSearch
 from requests_aws4auth import AWS4Auth
 import json
 import os.path
+import importlib.util
 
 
 reserved_fields = [ "uid", "_id", "_type", "_source", "_all", "_parent", "_fieldnames", "_routing", "_index", "_size", "_timestamp", "_ttl"]
@@ -46,8 +48,21 @@ def lambda_handler(event, context):
         connection_class=RequestsHttpConnection
     )
 
+    os = None
+    if (env.OS_ENDPOINT is not None):
+        os = OpenSearch(
+            [env.OS_ENDPOINT],
+            http_auth=awsauth,
+            use_ssl=True,
+            verify_certs=True,
+            connection_class=RequestsHttpConnection
+        )
+
     print("Cluster info:")
     print(es.info())
+
+    print("Cluster info:")
+    print(os.info())
 
     # Loop over the DynamoDB Stream records
     for record in event['Records']:
@@ -55,10 +70,16 @@ def lambda_handler(event, context):
         try:
             if record['eventName'] == "INSERT":
                 insert_document(es, record)
+                if (os):
+                    insert_document(os, record)
             elif record['eventName'] == "REMOVE":
                 remove_document(es, record)
+                if (os):
+                    remove_document(os, record)
             elif record['eventName'] == "MODIFY":
                 modify_document(es, record)
+                if (os):
+                    modify_document(os, record)
 
         except Exception as e:
             print("Failed to process:")
@@ -82,11 +103,17 @@ def modify_document(es, record):
     print(doc)
 
     # We reindex the whole document as ES accepts partial docs
-    es.index(index=table,
-             body=doc,
-             id=docId,
-             doc_type=table,
-             refresh=True)
+    if (type(es) is Elasticsearch):
+        es.index(index=table,
+                body=doc,
+                id=docId,
+            doc_type=table,
+                refresh=True)
+    else:
+        es.index(index=table,
+                body=doc,
+                id=docId,
+                refresh=True)
 
     print("Successly modified - Index: " + table + " - Document ID: " + docId)
 
@@ -97,11 +124,15 @@ def remove_document(es, record):
 
     docId = generateId(record, table)
     print("Deleting document ID: " + docId)
-
-    es.delete(index=table,
-              id=docId,
-              doc_type=table,
-              refresh=True)
+    if (type(es) is Elasticsearch):
+        es.delete(index=table,
+            id=docId,
+            doc_type=table,
+            refresh=True)
+    else:
+        es.delete(index=table,
+            id=docId,
+            refresh=True)
 
     print("Successly removed - Index: " + table + " - Document ID: " + docId)
 
@@ -126,11 +157,17 @@ def insert_document(es, record):
     print(doc)
 
     newId = generateId(record, table)
-    es.index(index=table,
-             body=doc,
-             id=newId,
-             doc_type=table,
-             refresh=True)
+    if (type(es) is Elasticsearch):
+        es.index(index=table,
+            body=doc,
+            id=newId,
+            doc_type=table,
+            refresh=True)
+    else:
+        es.index(index=table,
+            body=doc,
+            id=newId,
+            refresh=True)
 
     print("Successly inserted - Index: " + table + " - Document ID: " + newId)
 
