@@ -70,6 +70,34 @@ make deploy/DynamoToES DESC="Process DynamoDB stream to ES"
 
 That will update the ZIP and refresh your Lambda function.
 
+## Create and update the mapping
+
+Why do we need a mapping ?
+
+There is an issue with the lambda, dynamo streams doesn't ensure that your keys will be in the 'right' order. Most of the time dynamodb stream gives object with primary key first and then secondary. BUT it doesn't do it 100% of the time. That's why we came with the idea that a mapping to fix that was needed.
+
+What does the mapping script do ?
+
+It go through all your dynamodb tables, looking for enabled dynamo streams, list them, get mapping of each table and store it into a json. This json will then be used to check if the parameters are sent in the right order. If not, use the right keys according to the mapping.
+
+Is the mapping mandatory ?
+
+No, even without the mapping the function will works like before, trusting dynamodb streams for keys order.
+
+How do you update the mapping ?
+
+Use the script:
+
+
+```
+./update_mapping.py
+```
+
+This script gets all dynamo streams linked to the function DynamoToES. If your function
+is named differently, change it into the script.
+
+It create a file `lib/table_mappping.json`.
+
 ## Next
 
 Now your Lambda function is created, head to AWS Lambda, find the function we just created and click `Triggers`.
