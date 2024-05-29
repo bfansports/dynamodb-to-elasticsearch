@@ -1,0 +1,2784 @@
+{
+    "appstringstranslations": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1106",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "3266893549",
+                "x-amzn-requestid": "IC26JPF9BUMF5CQ76355Q8NBFRVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "IC26JPF9BUMF5CQ76355Q8NBFRVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "gid",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "gid",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2023-07-12T17:55:00.580000+02:00"
+            },
+            "CreationDateTime": "2023-07-12T17:55:00.580000+02:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 2495,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "gid",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/AppStringsTranslations/stream/2023-07-12T15:55:00.580",
+            "LatestStreamLabel": "2023-07-12T15:55:00.580",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/AppStringsTranslations",
+            "TableId": "a2d73afa-7b4d-4743-be41-861061c571a0",
+            "TableName": "AppStringsTranslations",
+            "TableSizeBytes": 2840742,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "assets": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1058",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "857994636",
+                "x-amzn-requestid": "G9FG213AVAEKCLPDHNVD54LSK7VV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "G9FG213AVAEKCLPDHNVD54LSK7VV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T17:59:40.162000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:53:18.177000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 650,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Assets/stream/2018-12-19T22:53:18.177",
+            "LatestStreamLabel": "2018-12-19T22:53:18.177",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Assets",
+            "TableId": "9daa69a0-08a8-4d48-a583-8b9f7c3ffdac",
+            "TableName": "Assets",
+            "TableSizeBytes": 1032124,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "championships": {
+        "PrimaryKey": "id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "984",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "1142497606",
+                "x-amzn-requestid": "97K2MM40M82I7BJ6KUKSDA7B37VV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "97K2MM40M82I7BJ6KUKSDA7B37VV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-10T15:59:35.406000+01:00"
+            },
+            "CreationDateTime": "2019-01-10T15:59:35.406000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 37,
+            "KeySchema": [
+                {
+                    "AttributeName": "id",
+                    "KeyType": "HASH"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Championships/stream/2019-01-10T14:59:35.406",
+            "LatestStreamLabel": "2019-01-10T14:59:35.406",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Championships",
+            "TableId": "0801369c-99a4-4ab0-b5f7-5d3a4ba0ac0c",
+            "TableName": "Championships",
+            "TableSizeBytes": 16559,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "changelogs": {
+        "PrimaryKey": "id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "973",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "2653812527",
+                "x-amzn-requestid": "DQ49658OU3Q0BPAHP6MJF9LREBVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "DQ49658OU3Q0BPAHP6MJF9LREBVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T18:16:59.751000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:53:56.688000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 8,
+            "KeySchema": [
+                {
+                    "AttributeName": "id",
+                    "KeyType": "HASH"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/ChangeLogs/stream/2018-12-19T22:53:56.688",
+            "LatestStreamLabel": "2018-12-19T22:53:56.688",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/ChangeLogs",
+            "TableId": "f4c9c8d1-e26a-468e-9f13-6e15ed1ba358",
+            "TableName": "ChangeLogs",
+            "TableSizeBytes": 9679,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "checkins": {
+        "PrimaryKey": "event_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1435",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "3831733636",
+                "x-amzn-requestid": "C0SBSIPA8LRR4RT8EDUCO0E4CBVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "C0SBSIPA8LRR4RT8EDUCO0E4CBVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "identity_id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "event_id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "identity_id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "uuid",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T18:25:11.504000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:54:28.227000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 34,
+            "KeySchema": [
+                {
+                    "AttributeName": "event_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "identity_id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Checkins/stream/2018-12-19T22:54:28.227",
+            "LatestStreamLabel": "2018-12-19T22:54:28.227",
+            "LocalSecondaryIndexes": [
+                {
+                    "IndexArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Checkins/index/byUuid",
+                    "IndexName": "byUuid",
+                    "IndexSizeBytes": 6234,
+                    "ItemCount": 33,
+                    "KeySchema": [
+                        {
+                            "AttributeName": "event_id",
+                            "KeyType": "HASH"
+                        },
+                        {
+                            "AttributeName": "uuid",
+                            "KeyType": "RANGE"
+                        }
+                    ],
+                    "Projection": {
+                        "ProjectionType": "ALL"
+                    }
+                }
+            ],
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Checkins",
+            "TableId": "ccd4ba7d-9f54-4077-ac7d-08b41df0f12c",
+            "TableName": "Checkins",
+            "TableSizeBytes": 6748,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "comcards": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1059",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "3858065684",
+                "x-amzn-requestid": "9I6K7EJ7V0HMB1QGNNBG7HMEUJVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "9I6K7EJ7V0HMB1QGNNBG7HMEUJVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-02-27T16:13:39.027000+01:00"
+            },
+            "CreationDateTime": "2019-02-27T16:13:39.027000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 3,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/ComCards/stream/2020-10-22T11:30:21.485",
+            "LatestStreamLabel": "2020-10-22T11:30:21.485",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/ComCards",
+            "TableId": "87242925-dba9-479c-a052-b6e34f808153",
+            "TableName": "ComCards",
+            "TableSizeBytes": 1498,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "commentary": {
+        "PrimaryKey": "event_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1085",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "1078042201",
+                "x-amzn-requestid": "KU178L2LUNH3BD5EGKBMNE2LONVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "KU178L2LUNH3BD5EGKBMNE2LONVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "timestamp",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "event_id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "timestamp",
+                    "AttributeType": "N"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T19:09:08.574000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:56:47.786000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 45,
+            "KeySchema": [
+                {
+                    "AttributeName": "event_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "timestamp",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Commentary/stream/2018-12-19T22:56:47.786",
+            "LatestStreamLabel": "2018-12-19T22:56:47.786",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Commentary",
+            "TableId": "3d7f7959-bf7e-459f-8944-c19551022682",
+            "TableName": "Commentary",
+            "TableSizeBytes": 13014,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "consents": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1065",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "17270137",
+                "x-amzn-requestid": "JTLUI42V0DRFNPGOA43A5DRJAVVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "JTLUI42V0DRFNPGOA43A5DRJAVVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "uuid",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "uuid",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T19:17:50.529000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:57:22.009000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 88,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "uuid",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Consents/stream/2018-12-19T22:57:22.009",
+            "LatestStreamLabel": "2018-12-19T22:57:22.009",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Consents",
+            "TableId": "d427f16e-4c5a-4453-b041-d31c86907ecc",
+            "TableName": "Consents",
+            "TableSizeBytes": 15136,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "customsnsmessages": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1104",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "3331537570",
+                "x-amzn-requestid": "62PEC9S3V1GV18CFFQEKCOODCRVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "62PEC9S3V1GV18CFFQEKCOODCRVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "timestamp",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "timestamp",
+                    "AttributeType": "N"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T18:47:44.475000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:55:38.525000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 692,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "timestamp",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/CustomSnsMessages/stream/2018-12-19T22:55:38.525",
+            "LatestStreamLabel": "2018-12-19T22:55:38.525",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/CustomSnsMessages",
+            "TableId": "33d45b81-fb85-403c-9c78-2d3af5c8f7ec",
+            "TableName": "CustomSnsMessages",
+            "TableSizeBytes": 131964,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "events": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1057",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "792517328",
+                "x-amzn-requestid": "RPB1QG5N8NFSVKO4LUD6IGTINNVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "RPB1QG5N8NFSVKO4LUD6IGTINNVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T17:22:54.738000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:51:36.081000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 411,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Events/stream/2018-12-19T22:51:36.081",
+            "LatestStreamLabel": "2018-12-19T22:51:36.081",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Events",
+            "TableId": "fcef33d7-d179-4759-8470-bafbdc2123d7",
+            "TableName": "Events",
+            "TableSizeBytes": 970956,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "fooddrinks": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1065",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "4152091905",
+                "x-amzn-requestid": "G3JG3JVDRK8L8BI8FMENNGFFHVVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "G3JG3JVDRK8L8BI8FMENNGFFHVVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T17:52:17.254000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:52:43.545000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 7,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/FoodDrinks/stream/2018-12-19T22:52:43.545",
+            "LatestStreamLabel": "2018-12-19T22:52:43.545",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/FoodDrinks",
+            "TableId": "aa1b7db4-6265-4031-bf4c-7e6c7e6baa0f",
+            "TableName": "FoodDrinks",
+            "TableSizeBytes": 8956,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "games": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1051",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "872302228",
+                "x-amzn-requestid": "S0G4SVDA2QASD6LLAS2MI221H3VV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "S0G4SVDA2QASD6LLAS2MI221H3VV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T16:57:54.740000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:50:28.400000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 901,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Games/stream/2018-12-19T22:50:28.400",
+            "LatestStreamLabel": "2018-12-19T22:50:28.400",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Games",
+            "TableId": "a862b951-c709-491c-b1dd-34e60d5e9a0d",
+            "TableName": "Games",
+            "TableSizeBytes": 1757995,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "lineupanswers": {
+        "PrimaryKey": "identity_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1113",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "2248926244",
+                "x-amzn-requestid": "9DK6O9IKV3271LDS0J6Q0TOIQFVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "9DK6O9IKV3271LDS0J6Q0TOIQFVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "org_id_lineup_id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "identity_id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id_lineup_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2023-04-26T15:54:54.239000+02:00"
+            },
+            "CreationDateTime": "2023-04-26T15:54:54.239000+02:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 6,
+            "KeySchema": [
+                {
+                    "AttributeName": "identity_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "org_id_lineup_id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/LineupAnswers/stream/2023-04-26T13:54:54.239",
+            "LatestStreamLabel": "2023-04-26T13:54:54.239",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/LineupAnswers",
+            "TableId": "82daa235-e1f9-4381-b3e2-d34e6bd26fca",
+            "TableName": "LineupAnswers",
+            "TableSizeBytes": 35658,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "mvpanswers": {
+        "PrimaryKey": "identity_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1098",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "232990931",
+                "x-amzn-requestid": "71KP3O9NSSA8NURP2OC0LCGTCNVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "71KP3O9NSSA8NURP2OC0LCGTCNVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "org_id_mvp_id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "identity_id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id_mvp_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T17:38:55.424000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:52:43.871000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 19,
+            "KeySchema": [
+                {
+                    "AttributeName": "identity_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "org_id_mvp_id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/MVPAnswers/stream/2018-12-19T22:52:43.871",
+            "LatestStreamLabel": "2018-12-19T22:52:43.871",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/MVPAnswers",
+            "TableId": "445fe49d-2b84-4678-bd15-b1764f9d10bb",
+            "TableName": "MVPAnswers",
+            "TableSizeBytes": 4983,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "newsposts": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1078",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "2342231108",
+                "x-amzn-requestid": "K58VL03CVHQQ5HSL1LF7RKNRK7VV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "K58VL03CVHQQ5HSL1LF7RKNRK7VV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "timestamp",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "timestamp",
+                    "AttributeType": "N"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T17:45:48.455000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:52:43.322000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 23,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "timestamp",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/NewsPosts/stream/2018-12-19T22:52:43.322",
+            "LatestStreamLabel": "2018-12-19T22:52:43.322",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/NewsPosts",
+            "TableId": "24932bf2-38bb-48e7-828e-6b733f93c768",
+            "TableName": "NewsPosts",
+            "TableSizeBytes": 22102,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "organizations": {
+        "PrimaryKey": "id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "983",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "2649465719",
+                "x-amzn-requestid": "F9D17L9LI04C1NUJM6V56NIPO3VV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "F9D17L9LI04C1NUJM6V56NIPO3VV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T18:07:00.528000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:53:56.649000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 4,
+            "KeySchema": [
+                {
+                    "AttributeName": "id",
+                    "KeyType": "HASH"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Organizations/stream/2018-12-19T22:53:56.649",
+            "LatestStreamLabel": "2018-12-19T22:53:56.649",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Organizations",
+            "TableId": "08d9fb0e-e7ae-4509-8c9c-c952662be8ca",
+            "TableName": "Organizations",
+            "TableSizeBytes": 26922,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "orgconsents": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1064",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "3712166031",
+                "x-amzn-requestid": "FPUP1L5QSK4JAFHB5MGIN6CJHNVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "FPUP1L5QSK4JAFHB5MGIN6CJHNVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2021-08-27T10:27:10.230000+02:00"
+            },
+            "CreationDateTime": "2021-08-27T10:27:10.230000+02:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 3,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/OrgConsents/stream/2021-08-27T08:27:10.230",
+            "LatestStreamLabel": "2021-08-27T08:27:10.230",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/OrgConsents",
+            "TableId": "f333a0c6-eb11-4c2c-9abf-08ab07ba3a41",
+            "TableName": "OrgConsents",
+            "TableSizeBytes": 882,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "partners": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1059",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "3912181531",
+                "x-amzn-requestid": "C6O6MCUIC6GJGF0TKGA69PJTS7VV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "C6O6MCUIC6GJGF0TKGA69PJTS7VV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T17:00:10.649000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:50:28.572000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 6,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Partners/stream/2018-12-19T22:50:28.572",
+            "LatestStreamLabel": "2018-12-19T22:50:28.572",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Partners",
+            "TableId": "7d4f6d12-5959-49d7-9f39-f723126ea860",
+            "TableName": "Partners",
+            "TableSizeBytes": 9544,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "players": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1058",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "3005908795",
+                "x-amzn-requestid": "63S8O8NN7719RFJ959LORN955RVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "63S8O8NN7719RFJ959LORN955RVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T17:48:56.619000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:52:43.939000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 20,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Players/stream/2018-12-19T22:52:43.939",
+            "LatestStreamLabel": "2018-12-19T22:52:43.939",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Players",
+            "TableId": "1f3c9fe6-f584-4444-94d9-0bb55e92aef7",
+            "TableName": "Players",
+            "TableSizeBytes": 24999,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "pollanswers": {
+        "PrimaryKey": "identity_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1103",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "563712662",
+                "x-amzn-requestid": "STKNC4DONEUNQBLIL3FOJ37HKFVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "STKNC4DONEUNQBLIL3FOJ37HKFVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "org_id_poll_id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "identity_id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id_poll_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T17:14:37.246000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:51:02.043000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 17,
+            "KeySchema": [
+                {
+                    "AttributeName": "identity_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "org_id_poll_id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/PollAnswers/stream/2018-12-19T22:51:02.043",
+            "LatestStreamLabel": "2018-12-19T22:51:02.043",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/PollAnswers",
+            "TableId": "ffc7aa23-9587-41b3-8d51-17c7b367b313",
+            "TableName": "PollAnswers",
+            "TableSizeBytes": 4369,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "predictions": {
+        "PrimaryKey": "identity_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1115",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "1244886519",
+                "x-amzn-requestid": "PO8RFB25TGN7L5IT2DH0LCU6BVVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "PO8RFB25TGN7L5IT2DH0LCU6BVVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "org_id_prediction_id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "identity_id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id_prediction_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T16:50:02.796000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:49:55.121000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 33,
+            "KeySchema": [
+                {
+                    "AttributeName": "identity_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "org_id_prediction_id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Predictions/stream/2018-12-19T22:49:55.121",
+            "LatestStreamLabel": "2018-12-19T22:49:55.121",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Predictions",
+            "TableId": "7dd67ec6-7342-4d6a-99eb-86ee4d7bbbc4",
+            "TableName": "Predictions",
+            "TableSizeBytes": 8329,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "questionanswers": {
+        "PrimaryKey": "identity_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1124",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "2810745536",
+                "x-amzn-requestid": "LJTI9P8V79D1MBBMO0P2UDGRRRVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "LJTI9P8V79D1MBBMO0P2UDGRRRVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "org_id_question_id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "identity_id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id_question_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T17:00:46.048000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:50:28.503000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 69,
+            "KeySchema": [
+                {
+                    "AttributeName": "identity_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "org_id_question_id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/QuestionAnswers/stream/2018-12-19T22:50:28.503",
+            "LatestStreamLabel": "2018-12-19T22:50:28.503",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/QuestionAnswers",
+            "TableId": "f5d7fe55-7397-4934-a148-59a9e758e7d9",
+            "TableName": "QuestionAnswers",
+            "TableSizeBytes": 19698,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "raffleentries": {
+        "PrimaryKey": "identity_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1140",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "1636064777",
+                "x-amzn-requestid": "TSKM14CHV8JIG74C37DEGIG98NVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "TSKM14CHV8JIG74C37DEGIG98NVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "org_id_raffle_id_entry_number",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "identity_id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id_raffle_id_entry_number",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T17:09:16.491000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:51:01.909000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 44,
+            "KeySchema": [
+                {
+                    "AttributeName": "identity_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "org_id_raffle_id_entry_number",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/RaffleEntries/stream/2018-12-19T22:51:01.909",
+            "LatestStreamLabel": "2018-12-19T22:51:01.909",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/RaffleEntries",
+            "TableId": "2bd9f1e5-e5c3-4fbe-ad03-e1d385751dd2",
+            "TableName": "RaffleEntries",
+            "TableSizeBytes": 10132,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "rankings": {
+        "PrimaryKey": "identity_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1101",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "691449047",
+                "x-amzn-requestid": "REJ5FPGH1TMENUDQQRLJM775GJVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "REJ5FPGH1TMENUDQQRLJM775GJVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "org_id_season_id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "identity_id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id_season_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-09-25T22:25:01.051000+02:00"
+            },
+            "CreationDateTime": "2019-09-25T22:25:01.051000+02:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 797,
+            "KeySchema": [
+                {
+                    "AttributeName": "identity_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "org_id_season_id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Rankings/stream/2019-09-25T20:25:01.051",
+            "LatestStreamLabel": "2019-09-25T20:25:01.051",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Rankings",
+            "TableId": "5469aa26-1d45-4bf4-811e-86a507dbb7e6",
+            "TableName": "Rankings",
+            "TableSizeBytes": 226925,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "redeemablecodes": {
+        "PrimaryKey": "reward_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1093",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "1101197068",
+                "x-amzn-requestid": "0MPL7751ILOECRFL1DNR2PMQI3VV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "0MPL7751ILOECRFL1DNR2PMQI3VV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "code",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "code",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "reward_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2021-08-02T17:27:07.722000+02:00"
+            },
+            "CreationDateTime": "2021-08-02T17:27:07.722000+02:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 138,
+            "KeySchema": [
+                {
+                    "AttributeName": "reward_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "code",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/RedeemableCodes/stream/2021-08-02T15:27:07.722",
+            "LatestStreamLabel": "2021-08-02T15:27:07.722",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/RedeemableCodes",
+            "TableId": "3505e99f-2ac5-4288-908b-581339311787",
+            "TableName": "RedeemableCodes",
+            "TableSizeBytes": 13101,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "redeemables": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1069",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "2544469105",
+                "x-amzn-requestid": "9R6QCU37U1S8CSU2DL0VMRTVI7VV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "9R6QCU37U1S8CSU2DL0VMRTVI7VV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T18:58:20.172000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:56:15.340000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 28,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Redeemables/stream/2018-12-19T22:56:15.340",
+            "LatestStreamLabel": "2018-12-19T22:56:15.340",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Redeemables",
+            "TableId": "eb584c68-f12a-4242-a668-5fd376a15f06",
+            "TableName": "Redeemables",
+            "TableSizeBytes": 53849,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "redeemed": {
+        "PrimaryKey": "identityId",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1071",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "695026963",
+                "x-amzn-requestid": "K9OJJ93NI2HRT3HLRS6R3T94TJVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "K9OJJ93NI2HRT3HLRS6R3T94TJVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "identityId",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T19:05:42.669000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:56:49.972000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 111,
+            "KeySchema": [
+                {
+                    "AttributeName": "identityId",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Redeemed/stream/2018-12-19T22:56:49.972",
+            "LatestStreamLabel": "2018-12-19T22:56:49.972",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Redeemed",
+            "TableId": "3c2fdc27-c033-41ea-92ce-1800e4585e64",
+            "TableName": "Redeemed",
+            "TableSizeBytes": 217407,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "relationships": {
+        "PrimaryKey": "origin",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1092",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "500751275",
+                "x-amzn-requestid": "L2B8H2D58UJD14SPDG3MC85PM3VV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "L2B8H2D58UJD14SPDG3MC85PM3VV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "relation",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "origin",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "relation",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T18:15:53.404000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:53:54.294000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 5592,
+            "KeySchema": [
+                {
+                    "AttributeName": "origin",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "relation",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Relationships/stream/2018-12-19T22:53:54.294",
+            "LatestStreamLabel": "2018-12-19T22:53:54.294",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Relationships",
+            "TableId": "caf32b47-5fe0-4887-99cb-3c8d2e74e5e5",
+            "TableName": "Relationships",
+            "TableSizeBytes": 1530803,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "rsvpusers": {
+        "PrimaryKey": "org_id_event_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1099",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "47673694",
+                "x-amzn-requestid": "K5EJOEVCDT22UUFT9ASLEPSAQ3VV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "K5EJOEVCDT22UUFT9ASLEPSAQ3VV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "identity_id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "identity_id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id_event_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2021-04-21T17:41:54.261000+02:00"
+            },
+            "CreationDateTime": "2021-04-21T17:41:54.261000+02:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 22,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id_event_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "identity_id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/RsvpUsers/stream/2021-04-21T15:41:54.261",
+            "LatestStreamLabel": "2021-04-21T15:41:54.261",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/RsvpUsers",
+            "TableId": "6e2f40b2-549d-4cbc-94cd-af09d644e1c6",
+            "TableName": "RsvpUsers",
+            "TableSizeBytes": 5450,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "shopproducts": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1071",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "3386095068",
+                "x-amzn-requestid": "L2HUP5PVH99QML3140UJ7DSOEFVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "L2HUP5PVH99QML3140UJ7DSOEFVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T17:47:41.686000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:52:43.674000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 5,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/ShopProducts/stream/2018-12-19T22:52:43.674",
+            "LatestStreamLabel": "2018-12-19T22:52:43.674",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/ShopProducts",
+            "TableId": "8eda87c3-1909-4249-ad7c-8b063d2b5900",
+            "TableName": "ShopProducts",
+            "TableSizeBytes": 6893,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "snsendpoints": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1141",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "2369725025",
+                "x-amzn-requestid": "72JR9J8S4PNRHSQD1G7I7IJ25BVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "72JR9J8S4PNRHSQD1G7I7IJ25BVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "endpoint_arn",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "endpoint_arn",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2022-07-03T14:02:40.499000+02:00"
+            },
+            "CreationDateTime": "2022-07-03T14:02:40.499000+02:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 483,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "endpoint_arn",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/SnsEndpoints/stream/2022-08-30T09:29:16.374",
+            "LatestStreamLabel": "2022-08-30T09:29:16.374",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/SnsEndpoints",
+            "TableClassSummary": {
+                "TableClass": "STANDARD"
+            },
+            "TableId": "6391d38a-e4f6-444f-a094-1e54625169d9",
+            "TableName": "SnsEndpoints",
+            "TableSizeBytes": 207725,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "socialposts": {
+        "PrimaryKey": "org_id_integration_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1114",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "54895025",
+                "x-amzn-requestid": "U6M22FBO0IDO17N4QFL1IJUK0NVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "U6M22FBO0IDO17N4QFL1IJUK0NVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "post_id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "org_id_integration_id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "post_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T18:18:14.735000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:54:27.772000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 4168,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id_integration_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "post_id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/SocialPosts/stream/2018-12-19T22:54:27.772",
+            "LatestStreamLabel": "2018-12-19T22:54:27.772",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/SocialPosts",
+            "TableId": "9b9e1bed-bbfe-4007-ba87-0aeef8d5881b",
+            "TableName": "SocialPosts",
+            "TableSizeBytes": 3396563,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "socialstats": {
+        "PrimaryKey": "social_stat_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1105",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "634558097",
+                "x-amzn-requestid": "M14KANM4SV6G38TCV92HB040EBVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "M14KANM4SV6G38TCV92HB040EBVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "timestamp",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "social_stat_id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "timestamp",
+                    "AttributeType": "N"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T17:38:14.132000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:52:45.691000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 10372,
+            "KeySchema": [
+                {
+                    "AttributeName": "social_stat_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "timestamp",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/SocialStats/stream/2018-12-19T22:52:45.691",
+            "LatestStreamLabel": "2018-12-19T22:52:45.691",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/SocialStats",
+            "TableId": "cd7879fe-7257-4c4d-ba37-20597ffbbf4a",
+            "TableName": "SocialStats",
+            "TableSizeBytes": 1513075,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "stickers": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1059",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "1081242860",
+                "x-amzn-requestid": "H8QU690VQ7VOE5M53DTG8FCGC3VV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "H8QU690VQ7VOE5M53DTG8FCGC3VV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-11-26T18:30:31.934000+01:00"
+            },
+            "CreationDateTime": "2019-11-26T18:30:31.934000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 5,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Stickers/stream/2019-11-26T17:30:31.934",
+            "LatestStreamLabel": "2019-11-26T17:30:31.934",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Stickers",
+            "TableId": "feaad692-1501-4514-89d6-e22fe1c593c4",
+            "TableName": "Stickers",
+            "TableSizeBytes": 2712,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "stickerspacks": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1073",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "581499799",
+                "x-amzn-requestid": "O5J36EH4VQ047GSA6KGBN5IE2VVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "O5J36EH4VQ047GSA6KGBN5IE2VVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-11-26T18:30:32.145000+01:00"
+            },
+            "CreationDateTime": "2019-11-26T18:30:32.145000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 4,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/StickersPacks/stream/2019-11-26T17:30:32.145",
+            "LatestStreamLabel": "2019-11-26T17:30:32.145",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/StickersPacks",
+            "TableId": "c06037bf-5c87-4ee7-8601-35d8708152ed",
+            "TableName": "StickersPacks",
+            "TableSizeBytes": 922,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "subscribercards": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1079",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "2617260044",
+                "x-amzn-requestid": "IJJADNA117C5GIPJ4HVTM6C0NBVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "IJJADNA117C5GIPJ4HVTM6C0NBVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "id",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2021-07-15T12:00:56.995000+02:00"
+            },
+            "CreationDateTime": "2021-07-15T12:00:56.995000+02:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 1,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "id",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/SubscriberCards/stream/2021-07-15T10:00:56.995",
+            "LatestStreamLabel": "2021-07-15T10:00:56.995",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/SubscriberCards",
+            "TableId": "c4dd308f-01d2-4a42-8f4a-296ba370ee62",
+            "TableName": "SubscriberCards",
+            "TableSizeBytes": 637,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "subscribercardsdata": {
+        "PrimaryKey": "card_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1098",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "4084824716",
+                "x-amzn-requestid": "AUCS9NHNNOIAESMB492SO0KGOFVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "AUCS9NHNNOIAESMB492SO0KGOFVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "code",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "card_id",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "code",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2021-07-23T18:13:56.579000+02:00"
+            },
+            "CreationDateTime": "2021-07-23T18:13:56.579000+02:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 8,
+            "KeySchema": [
+                {
+                    "AttributeName": "card_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "code",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/SubscriberCardsData/stream/2021-07-23T16:13:56.579",
+            "LatestStreamLabel": "2021-07-23T16:13:56.579",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/SubscriberCardsData",
+            "TableId": "81719514-3635-4d82-b032-0d5fac4af286",
+            "TableName": "SubscriberCardsData",
+            "TableSizeBytes": 2701,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "teams": {
+        "PrimaryKey": "id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "961",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "960086959",
+                "x-amzn-requestid": "D9JTSFDME31DCEBUHQ70OBN52VVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "D9JTSFDME31DCEBUHQ70OBN52VVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T17:31:10.846000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:52:09.747000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 225,
+            "KeySchema": [
+                {
+                    "AttributeName": "id",
+                    "KeyType": "HASH"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Teams/stream/2018-12-19T22:52:09.747",
+            "LatestStreamLabel": "2018-12-19T22:52:09.747",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Teams",
+            "TableId": "b46765cb-976c-49e1-8aa7-35d3ffc9189c",
+            "TableName": "Teams",
+            "TableSizeBytes": 82166,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "userconsents": {
+        "PrimaryKey": "identity_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1117",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "1911474129",
+                "x-amzn-requestid": "E85O4K9IMFLLITPVIM4LC1R6TJVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "E85O4K9IMFLLITPVIM4LC1R6TJVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "consent_id_version",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "consent_id_version",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "identity_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2021-08-27T10:27:09.982000+02:00"
+            },
+            "CreationDateTime": "2021-08-27T10:27:09.982000+02:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 560,
+            "KeySchema": [
+                {
+                    "AttributeName": "identity_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "consent_id_version",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/UserConsents/stream/2021-08-27T08:27:09.982",
+            "LatestStreamLabel": "2021-08-27T08:27:09.982",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/UserConsents",
+            "TableId": "b58f5fe7-f087-4ccd-bab8-9e8e749c7e7f",
+            "TableName": "UserConsents",
+            "TableSizeBytes": 150226,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "useremails": {
+        "PrimaryKey": "identityId",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1077",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "3778306380",
+                "x-amzn-requestid": "5B3QBO2KDJNUI5UF2OU83BGKMJVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "5B3QBO2KDJNUI5UF2OU83BGKMJVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "email",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "email",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "identityId",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-11-18T17:08:36.340000+01:00"
+            },
+            "CreationDateTime": "2019-11-18T17:08:36.340000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 10,
+            "KeySchema": [
+                {
+                    "AttributeName": "identityId",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "email",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/UserEmails/stream/2019-11-18T16:08:36.340",
+            "LatestStreamLabel": "2019-11-18T16:08:36.340",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/UserEmails",
+            "TableId": "9ba8fb8a-9933-4149-b33c-e1586f9891ab",
+            "TableName": "UserEmails",
+            "TableSizeBytes": 1080,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "userinvitecodes": {
+        "PrimaryKey": "org_id",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1081",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "3475377154",
+                "x-amzn-requestid": "SA3KEKJ34EKT7MF43CD2KGCQHRVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "SA3KEKJ34EKT7MF43CD2KGCQHRVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "code",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "code",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2021-01-07T11:37:56.820000+01:00"
+            },
+            "CreationDateTime": "2021-01-07T11:37:56.820000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 9,
+            "KeySchema": [
+                {
+                    "AttributeName": "org_id",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "code",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/UserInviteCodes/stream/2021-01-07T10:37:56.820",
+            "LatestStreamLabel": "2021-01-07T10:37:56.820",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/UserInviteCodes",
+            "TableId": "660851f8-c826-455f-83e3-66642825a257",
+            "TableName": "UserInviteCodes",
+            "TableSizeBytes": 1846,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "users": {
+        "PrimaryKey": "identityId",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1440",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "529364966",
+                "x-amzn-requestid": "ECRNG581HD35MR5IBJ8SI9O0ONVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "ECRNG581HD35MR5IBJ8SI9O0ONVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "cognito_sub",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "identityId",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T17:28:59.423000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:51:35.544000+01:00",
+            "DeletionProtectionEnabled": false,
+            "GlobalSecondaryIndexes": [
+                {
+                    "IndexArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Users/index/UsersByCognitoSub",
+                    "IndexName": "UsersByCognitoSub",
+                    "IndexSizeBytes": 75118,
+                    "IndexStatus": "ACTIVE",
+                    "ItemCount": 37,
+                    "KeySchema": [
+                        {
+                            "AttributeName": "cognito_sub",
+                            "KeyType": "HASH"
+                        }
+                    ],
+                    "Projection": {
+                        "ProjectionType": "ALL"
+                    },
+                    "ProvisionedThroughput": {
+                        "NumberOfDecreasesToday": 0,
+                        "ReadCapacityUnits": 0,
+                        "WriteCapacityUnits": 0
+                    }
+                }
+            ],
+            "ItemCount": 178,
+            "KeySchema": [
+                {
+                    "AttributeName": "identityId",
+                    "KeyType": "HASH"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Users/stream/2018-12-19T22:51:35.544",
+            "LatestStreamLabel": "2018-12-19T22:51:35.544",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/Users",
+            "TableId": "513aa9d5-c1de-4fea-80eb-e4dec1c87f2f",
+            "TableName": "Users",
+            "TableSizeBytes": 316017,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "usersegmentedcustomfields": {
+        "PrimaryKey": "identityId",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1149",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:14 GMT",
+                "server": "Server",
+                "x-amz-crc32": "1195989933",
+                "x-amzn-requestid": "84LKICEFB1EHKQN4I3MLTI27NBVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "84LKICEFB1EHKQN4I3MLTI27NBVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "org_id_field_name",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "identityId",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "org_id_field_name",
+                    "AttributeType": "S"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2020-09-18T00:15:17.989000+02:00"
+            },
+            "CreationDateTime": "2020-09-18T00:15:17.989000+02:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 10,
+            "KeySchema": [
+                {
+                    "AttributeName": "identityId",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "org_id_field_name",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/UserSegmentedCustomFields/stream/2020-09-17T22:15:17.989",
+            "LatestStreamLabel": "2020-09-17T22:15:17.989",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/UserSegmentedCustomFields",
+            "TableId": "4935ee7f-e750-4bd1-9d13-3984e7a1b186",
+            "TableName": "UserSegmentedCustomFields",
+            "TableSizeBytes": 1555,
+            "TableStatus": "ACTIVE"
+        }
+    },
+    "userstatstransactions": {
+        "PrimaryKey": "identityId",
+        "ResponseMetadata": {
+            "HTTPHeaders": {
+                "connection": "keep-alive",
+                "content-length": "1117",
+                "content-type": "application/x-amz-json-1.0",
+                "date": "Wed, 29 May 2024 15:46:15 GMT",
+                "server": "Server",
+                "x-amz-crc32": "3475872769",
+                "x-amzn-requestid": "H7401U84L0AVMIJNIA0GCKM3RVVV4KQNSO5AEMVJF66Q9ASUAAJG"
+            },
+            "HTTPStatusCode": 200,
+            "RequestId": "H7401U84L0AVMIJNIA0GCKM3RVVV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "RetryAttempts": 0
+        },
+        "SortKey": "updated",
+        "Table": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "identityId",
+                    "AttributeType": "S"
+                },
+                {
+                    "AttributeName": "updated",
+                    "AttributeType": "N"
+                }
+            ],
+            "BillingModeSummary": {
+                "BillingMode": "PAY_PER_REQUEST",
+                "LastUpdateToPayPerRequestDateTime": "2019-01-09T17:25:52.070000+01:00"
+            },
+            "CreationDateTime": "2018-12-19T23:51:35.578000+01:00",
+            "DeletionProtectionEnabled": false,
+            "ItemCount": 671,
+            "KeySchema": [
+                {
+                    "AttributeName": "identityId",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "updated",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "LatestStreamArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/UserStatsTransactions/stream/2018-12-19T22:51:35.578",
+            "LatestStreamLabel": "2018-12-19T22:51:35.578",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 0,
+                "WriteCapacityUnits": 0
+            },
+            "StreamSpecification": {
+                "StreamEnabled": true,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "TableArn": "arn:aws:dynamodb:eu-west-1:441276146445:table/UserStatsTransactions",
+            "TableId": "b1da27eb-28d0-4730-9522-e08a47770d6f",
+            "TableName": "UserStatsTransactions",
+            "TableSizeBytes": 96720,
+            "TableStatus": "ACTIVE"
+        }
+    }
+}
