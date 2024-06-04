@@ -60,4 +60,4 @@ venv/
 .env
 dev_es_creds
 lib/env.py
-
+lib/table_mapping.json
