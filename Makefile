@@ -60,7 +60,7 @@ deploy/%: dist/%.zip .env update_mapping
 		--architectures arm64 \
 		--s3-bucket ${AWS_BUCKET_CODE} \
 		--s3-key lambda/$(<F)
-	sleep 5
+	sleep 10
 	aws $(if ${PROFILE},--profile ${PROFILE},) lambda update-function-configuration \
       --function-name $* \
       --runtime python3.12

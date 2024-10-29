@@ -2,3 +2,4 @@ boto3==1.34.116
 requests==2.32.3
 requests-aws4auth==1.2.3
 elasticsearch==7.17.9
+opensearch-py==2.7.1
