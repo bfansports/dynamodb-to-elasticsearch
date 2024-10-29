@@ -25,6 +25,8 @@ reserved_fields = [
     "_ttl",
 ]
 
+TIMEOUT_VALUE = 120
+
 
 # Process DynamoDB Stream records and insert the object in ElasticSearch
 # Use the Table name as index and doc_type name
@@ -73,6 +75,7 @@ def lambda_handler(event, context):
             use_ssl=True,
             verify_certs=True,
             connection_class=RequestsHttpConnection,
+            timeout=TIMEOUT_VALUE,
         )
 
     if es_client:
@@ -105,7 +108,7 @@ def lambda_handler(event, context):
 
         except Exception as e:
             print("Failed to process:")
-            print(json.dumps(record))
+            print(json.dumps(record, default=serialize_sets))
             print("ERROR: " + repr(e))
             print(traceback.format_exc())
             continue
@@ -121,7 +124,7 @@ def modify_document(search_client, record):
     print(docId)
 
     # Unmarshal the DynamoDB JSON to a normal JSON
-    doc = json.dumps(unmarshalJson(record["dynamodb"]["NewImage"]))
+    doc = json.dumps(unmarshalJson(record["dynamodb"]["NewImage"]), default=serialize_sets)
 
     print("Updated document:")
     print(doc)
@@ -169,7 +172,7 @@ def insert_document(search_client, record):
     print("Dynamo Table: " + table)
 
     # Unmarshal the DynamoDB JSON to a normal JSON
-    doc = json.dumps(unmarshalJson(record["dynamodb"]["NewImage"]))
+    doc = json.dumps(unmarshalJson(record["dynamodb"]["NewImage"]), default=serialize_sets)
 
     print("New document to Index:")
     print(doc)
@@ -289,3 +292,7 @@ def int_or_float(s):
         return int(s)
     except ValueError:
         return float(s)
+
+def serialize_sets(obj):
+    if isinstance(obj, set):
+        return list(obj)
