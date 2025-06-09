@@ -25,8 +25,11 @@ def json_serial(obj):
     raise TypeError ("Type %s not serializable" % type(obj))
 
 table_list = {
-	re.search(".+:table\/([a-zA-Z]+)\/.+", event_source["EventSourceArn"]).group(1) : event_source
-	for event_source in response["EventSourceMappings"]
+	match.group(1) : event_source
+	for event_source in response["EventSourceMappings"] 
+	if "EventSourceMappings" in response 
+	and (event_source_arn := event_source.get("EventSourceArn")) is not None
+	and (match := re.search(".+:table/([a-zA-Z]+)/.+", event_source_arn)) is not None
 }
 
 table_mapping = {
